@@ -88,7 +88,7 @@ app.post('/subir', upload.single('comprobante'), (req, res) => {
 });
 
 // === Puerto dinámico para Railway o local ===
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT; 
 server.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
 });
